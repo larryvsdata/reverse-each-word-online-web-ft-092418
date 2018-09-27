@@ -7,5 +7,8 @@ def reverse_each_word(phrase)
   new_phrase.push(item.reverse)
   end
   
-  return new_phrase.join(" ")
+  new_phrase2=phrase.collect{|item| item.reverse}
+  
+  
+  return new_phrase2.join(" ")
 end
